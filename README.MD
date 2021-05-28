@@ -10,9 +10,9 @@
 
  # Tabla de rutas.
 
- |     rutas    | compañía    |
+ |     Ruta    | Página    |
 |-------------------|-------------|
-|    /       |     Pagina de inicio        |
-| /contacto         | Pagina de contacto       | 
-| /users | página para visualizar los datos de la base de datos |
+|    /       |     Página de inicio        |
+| /contacto         | Página de contacto       | 
+| /users | Página para visualizar los datos de la base de datos |
 
