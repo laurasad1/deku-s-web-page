@@ -1,44 +1,41 @@
-*
-{
+* {
     margin: 0;
     padding: 0;
 }
 
-body 
-{
+
+body {
     background-image: url("../fotos/backgroundC.png");
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
 }
 
-#anuncio{
+.anuncio {
 
- position: absolute;
- margin: 4%;
-   
+    position: absolute;
+    margin: 4%;
+}
+
+.anuncio img {
+    width: 100%;
+    object-fit: cover;
 }
 
 
-#lolx
-{
+#lolx {
     height: 80px;
     width: 18%;
     margin-left: 41%;
-    
-    
+    clear: both;
 }
 
-.flow
-{
+.flow {
     text-align: center;
-    
 }
 
-form
-{
+form {
     text-align: center;
     margin-bottom: 4.9%;
     clear: both;
 }
-

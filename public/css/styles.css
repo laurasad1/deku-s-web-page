@@ -1,8 +1,10 @@
 * {
     margin: 0;
     padding: 0;
-    scroll-behavior: smooth;
+}
 
+html{
+    scroll-behavior: smooth;
 }
 
 @font-face {
@@ -493,3 +495,4 @@ iframe {
     display: inline-block;
     margin-left: 3%;
 }
+
