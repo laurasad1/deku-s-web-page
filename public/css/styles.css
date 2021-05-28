@@ -1,84 +1,72 @@
-*{
+* {
     margin: 0;
     padding: 0;
- } 
+    scroll-behavior: smooth;
+
+}
 
 @font-face {
     font-family: 'Folks';
     src: url(../fonts/Folks-Normal.ttf) format("opentype");
 }
 
- @font-face 
- {
-     font-family: 'Caramel';
-     src: url(../fonts/Caramel\ Sweets.ttf) format("opentype");
- }
- html
- {
-     scroll-behavior: smooth;
- }
+@font-face {
+    font-family: 'Caramel';
+    src: url(../fonts/Caramel\ Sweets.ttf) format("opentype");
+}
 
- #myBtn 
- {
-    display: none; 
+#myBtn {
+    display: none;
     position: fixed;
-    bottom: 20px; 
+    bottom: 30px;
     right: 30px;
     z-index: 99;
-    border: none; 
-    outline: none; 
-    background-color: red;
-    color: white; 
+    border: none;
+    outline: none;
+    background-color: rgb(60, 211, 145);
+    color: white;
     cursor: pointer;
-    padding: 15px; 
+    padding: 5px;
     border-radius: 10px;
-    font-size: 18px; 
-}
-  
-#myBtn:hover 
-{
-    background-color: #555;
+    font-size: 18px;
 }
 
-#lolx
-{
+#myBtn:hover {
+    background-color: rgb(11, 181, 215);
+}
+
+#lolx {
     height: 80px;
     width: 18%;
 }
 
-.header
-{
+.header {
     position: sticky;
-    z-index: 1; 
+    z-index: 1;
 }
 
-.navegeishion
-{
+.navegeishion {
     position: fixed;
     background: #52B788;
     height: 80px;
-    width: 100%;  
+    width: 100%;
 }
 
-label.loguiviris
-{
-    color:#fff;
+label.loguiviris {
+    color: #fff;
     font-size: 35px;
 }
 
-.navegeishion ul
-{
+.navegeishion ul {
     float: right;
 }
 
-.navegeishion ul li
-{
+.navegeishion ul li {
     display: inline-block;
     line-height: 80px;
 }
 
-.navegeishion ul li a
-{
+.navegeishion ul li a {
     color: white;
     font-size: 17px;
     padding: 7px 50px;
@@ -86,29 +74,40 @@ label.loguiviris
     text-transform: uppercase;
 }
 
-.navegeishion ul button
-{
+.navegeishion ul button {
     background-color: transparent;
     border: none;
 }
 
-.navegeishion a:hover
-{
+.navegeishion a:hover {
     color: #4582B4;
     transition: .5s;
 }
 
-#check
-{
+#check {
     display: none;
 }
 
+.progress-container {
+    width: 100%;
+    height: 8px;
+    background-color: transparent;
+    margin-top: 5.8%;
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    top: 0;
+}
 
+.progress-bar {
+    height: 8px;
+    width: 0%;
+    background-color: #507a83;
+}
 
 /*Sección de Inicio*/
 
-#Iniciox
-{
+#Iniciox {
     margin-top: 10%;
     margin-bottom: 2%;
     text-align: center;
@@ -116,40 +115,36 @@ label.loguiviris
     font-family: 'Caramel';
 }
 
-#inicio
-{
+#inicio {
     height: 1000px;
     width: 20%;
 }
 
-#leftbox 
-{
-    float:left; 
+#leftbox {
+    float: left;
     background: #B7E4C7;
-    width:25%;
-    height:350px;
+    width: 25%;
+    height: 350px;
 }
 
-#leftbox button
-{
+#leftbox button {
     margin-left: 18%;
-    margin-top: 37%; 
+    margin-top: 37%;
     width: 25%;
     height: 50px;
     border: none;
     background-color: transparent;
-    background-image:url('../fotos/fleshitasxd.png');
+    background-image: url('../fotos/fleshitasxd.png');
     background-size: 53%;
     background-position: center;
-    background-repeat:no-repeat ;
+    background-repeat: no-repeat;
 }
 
-#middlebox
-{
-    float:left; 
-    background:Green;
-    width:50%;
-    height:350px;
+#middlebox {
+    float: left;
+    background: Green;
+    width: 50%;
+    height: 350px;
     text-align: center;
     vertical-align: center;
     overflow: hidden;
@@ -157,22 +152,19 @@ label.loguiviris
     margin-bottom: 5%;
 }
 
-.slider 
-{
+.slider {
     width: 500%;
     display: flex;
     height: 100px;
     margin-left: -100%;
 }
 
-.sliderS 
-{
+.sliderS {
     width: 100%;
 }
 
 
-.sliderImg 
-{
+.sliderImg {
 
     width: 100%;
     height: 350px;
@@ -181,233 +173,224 @@ label.loguiviris
 
 }
 
-#rightbox
-{
-    float:right;
+#rightbox {
+    float: right;
     background: #B7E4C7;
-    width:25%;
-    height:350px;
+    width: 25%;
+    height: 350px;
 }
 
-#rightbox button
-{
+#rightbox button {
     margin-left: 52%;
     margin-top: 35%;
     width: 25%;
     height: 50px;
     border: none;
     background-color: transparent;
-    background-image:url('../fotos/fleshitasxdd.png');
+    background-image: url('../fotos/fleshitasxdd.png');
     background-size: 53%;
     background-position: center;
-    background-repeat:no-repeat ;
+    background-repeat: no-repeat;
 }
 
 
-#fleshita2
-{
+#fleshita2 {
     width: 50%;
     height: 50px;
     visibility: hidden;
 }
 
-#fleshitaxd
-{
+#fleshitaxd {
     width: 50%;
     height: 50px;
     visibility: hidden;
 }
 
-#rightbox button:hover  #fleshita2
-{
+#rightbox button:hover #fleshita2 {
     visibility: visible;
 }
-#leftbox button:hover  #fleshitaxd
-{
+
+#leftbox button:hover #fleshitaxd {
     visibility: visible;
 }
 
 
 /*Sección Coming Soon*/
-#about
-{
+#about {
     text-align: center;
     font-size: 30px;
     font-family: 'Caramel';
     width: 20%;
     margin-left: auto;
     margin-right: auto;
-    
+
 }
 
 
-.about
-{
+.about {
     background-color: #B7E4C7;
     height: 380px;
 }
 
-.imga
-{
+.imga {
     margin: 2px;
-    display:inline-block;
+    display: inline-block;
     width: 320px;
     margin-bottom: 0.5%;
     padding-left: 3%;
 }
 
-.containerxd
-{
+.containerxd {
     padding-top: 2.5%;
     text-align: center;
 }
 
 /* COMING SOON */
 
-.Kirishima
-{
+.Kirishima {
     width: 850px;
     height: 300px;
-    display:inline-block;
+    display: inline-block;
 }
 
-.Tokoyami
-{
+.Tokoyami {
     width: 850px;
     height: 300px;
-    display:inline-block;
+    display: inline-block;
 }
 
-.Deku
-{
+.Deku {
     width: 300px;
     height: 300px;
-    display:inline-block;
+    display: inline-block;
 }
 
-.containerimg2
-{
+.containerimg2 {
     background-color: #FAD04F;
     padding-left: 2%;
     padding-bottom: 1%;
 }
 
-.imga2
-{
+.imga2 {
     margin: 2px;
-    display:inline-block;
+    display: inline-block;
     width: 320px;
     backface-visibility: hidden;
 }
 
-.imgwrapper8
-{
+.imgwrapper8 {
     display: flex;
     width: 100%;
     background-color: rgb(255, 255, 255);
-  
+    transition: 1s;
 }
 
-.text3
-{
+.imga:hover .imgwrapper8 {
+    transform: rotateZ(360deg);
+    transition: 1.5s;
+    box-shadow: 6px 15px 18px #888888;
+
+}
+
+.text3 {
     text-align: justify;
     font-size: 15px;
     font-family: 'Folks';
 }
 
-.text3 ul
-{
+.text3 ul {
     padding-top: 10%;
     padding-right: 10%;
 }
 
-.text8
-{
+.text8 {
     text-align: justify;
     font-size: 15px;
     font-family: 'Folks';
 }
 
-.text8 ul
-{
+.text8 ul {
     padding-top: 10%;
     padding-right: 10%;
 }
 
-.text
-{
+.text {
     text-align: justify;
     font-size: 15px;
     font-family: 'Folks';
 }
 
-.text ul
-{
+.text ul {
     padding-top: 10%;
     padding-right: 20%;
 }
 
-.imgwrapper 
-{
+.imgwrapper {
     display: flex;
     width: 100%;
     background-color: white;
+    transition: 1s;
 }
 
- .imgwrapper3 
-{
+.imgwrapper:hover {
+    transform: rotateZ(360deg);
+    transition: 1.5s;
+    box-shadow: 6px 15px 18px #888888;
+}
+
+
+.imgwrapper3 {
     display: flex;
     width: 100%;
     background-color: white;
+    transition: 1s;
 }
 
+.imgwrapper3:hover{
+    transform: rotateZ(360deg);
+    transition: 1.5s;
+    box-shadow: 6px 15px 18px #888888;
+}
 /*Sección Proyectos*/
 
-#Proyectox
-{
+#Proyectox {
     text-align: center;
     font-size: 30px;
     font-family: 'Caramel';
 }
-#Proyecto
-{
+
+#Proyecto {
     padding-bottom: 7%;
 }
 
-iframe
-{
-    width: 815px; 
-    height: 380px; 
+iframe {
+    width: 815px;
+    height: 380px;
 }
 
 
-#boxmiddle
-{
-    display: grid; 
+#boxmiddle {
+    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
-    float:left; 
-    background:Green;
-    width:60%;
-    height:380px;
+    float: left;
+    background: Green;
+    width: 60%;
+    height: 380px;
     text-align: center;
     vertical-align: center;
     margin-left: 21%;
 }
 
-#boxmiddle2
-{
+#boxmiddle2 {
     margin-left: 110%;
     background: rgb(0, 0, 0);
     margin-top: 40%;
 }
 
-
-
 /*Sección Mercancía*/
 
-#melcancia
-{
+#melcancia {
     margin-bottom: 3%;
     margin-top: 26%;
     text-align: center;
@@ -415,32 +398,31 @@ iframe
     font-family: 'Caramel';
 }
 
-.merc
-{
+.merc {
     padding: 2%;
-    display:inline-block;
+    display: inline-block;
     width: 150px;
     text-align: center;
     margin-bottom: 3%;
-    
+
 }
 
-.xd
-{
+.xd {
     padding: 5px 10px 5px 10px;
-    display:inline-block;
+    display: inline-block;
     width: 180px;
     text-align: center;
     margin-bottom: 5%;
     height: 300px;
     object-fit: cover;
 }
-.wao{
+
+.wao {
     margin-left: 15%;
 
 }
-.wao button
-{
+
+.wao button {
     background: #fff;
     text-align: center;
     padding: 10px 20px;
@@ -451,63 +433,63 @@ iframe
     font-weight: bold;
     cursor: pointer;
 }
-.wao button:hover{
-    color:#fff;
+
+.wao button:hover {
+    color: #fff;
     background: #000;
     transition: 0.5s;
     font-weight: bold;
     font-size: 18px;
     border: none;
 }
-.mercancia 
-{
-   text-align: center;  
-   background-color: black;
+
+.mercancia {
+    text-align: center;
+    background-color: black;
 }
 
-.mercancia2 
-{
+.mercancia2 {
     text-align: center;
     background-color: rgb(0, 0, 0);
 }
 
 /*Footer*/
 
-.footer 
-{
+.footer {
     width: 100%;
     background: #52B788;
     margin-top: 6%;
     height: 100px;
-    
+
+}
+
+#map {
+    width: 100%;
+    height: 261px;
+    display: block;
+    margin: auto;
 }
 
 
-.alineamiento
-{
+.alineamiento {
     display: inline-block;
     text-align: center;
-    
+
 }
 
-#lolfooter
-{
+#lolfooter {
     height: 80px;
     width: 16%;
     margin-right: 10%;
     float: left;
 }
 
-.Ingratam
-{
+.Ingratam {
     margin-top: 20%;
 }
 
-.alineamiento2
-{
+.alineamiento2 {
     clear: both;
     display: inline-block;
     margin-left: 3%;
 }
-
-
