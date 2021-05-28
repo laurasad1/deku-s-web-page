@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const mysql = require('mysql');
 const nodemailer = require('nodemailer');
-const port = 3030;
+const port = process.env.PORT || 3030;
 
 
 app.get('/', (req, res) => {
